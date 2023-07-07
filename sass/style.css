@@ -59,6 +59,10 @@ h5 {
   color: #2f281e;
   margin: 0; }
 
+input,
+textarea {
+  box-sizing: border-box; }
+
 .button {
   font-size: 1.6rem;
   line-height: 1.6rem;
