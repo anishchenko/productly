@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+    &:hover {
+      color: $color-prime;
+      @extend %transition;
+    }
+  }
+  // color: $color-text;
+}
+
+.navigation__item {
+  padding-right: 17px;
+}

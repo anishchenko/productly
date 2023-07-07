@@ -1,0 +1,30 @@
+// normalize-scss does not work((
+// @import "../node_modules/normalize-scss/sass/normalize";
+@import "../node_modules/normalize.css/normalize.css";
+
+//abstracts
+@import "abstracts/variables";
+@import "abstracts/placeholders";
+@import "abstracts/mixins";
+
+// base
+@import "base/base";
+@import "base/buttons";
+@import "base/tags";
+@import "base/icons";
+@import "base/strategy";
+@import "base/employee";
+
+//layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/columns";
+
+//components
+@import "components/navigation";
+@import "components/promo";
+@import "components/tools";
+@import "components/strategies";
+@import "components/about";
+@import "components/contact-us";
+@import "components/_footer";

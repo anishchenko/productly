@@ -1,0 +1,53 @@
+.contact {
+  background-color: $color-background;
+}
+
+.contact__wrapper {
+  padding: 62px 0 82px 0;
+}
+
+.contact__header {
+  margin: 0 0 16px 0;
+}
+
+.contact__description {
+  margin: 0 15px 0 0;
+}
+
+.contact__phone,
+.contact__email {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  > * {
+    @include font ($size: 2.5rem, $height: 2.6rem, $color: $color-text);
+    text-decoration: none;
+  }
+}
+
+.form__text {
+  margin: 18px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: #fff;
+  outline: none;
+  border-style: solid;
+  &:active,
+  &:focus {
+    border-color: $color-prime;
+  }
+}
+
+.form__textarea {
+  margin: 20px 0;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  border-color: #fff;
+  outline: none;
+  border-style: solid;
+  &:active,
+  &:focus {
+    border-color: $color-prime;
+  }
+}

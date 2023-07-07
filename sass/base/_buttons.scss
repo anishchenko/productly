@@ -1,0 +1,36 @@
+.button {
+  @include font($size: 1.6rem, $weight: 600);
+  padding: 11px 25px 13px 25px;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+  @extend %transition;
+  &__bordered {
+    background-color: $color-light;
+    border-color: $color-button;
+    &:hover {
+      background-color: $color-button;
+    }
+  }
+  &__colored {
+    color: $color-light;
+    background-color: $color-prime;
+    border-color: $color-prime;
+    &:hover {
+      background-color: $color-prime-hover;
+      border-color: $color-prime-hover;
+    }
+  }
+}
+
+.link-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-prime;
+  @extend %secondary-font;
+  @include font($size: 1.6rem, $weight:600, $color: $color-prime);
+  &:hover {
+    color: $color-prime-hover;
+  }
+}

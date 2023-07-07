@@ -1,0 +1,16 @@
+.tag__button {
+  margin-right: 7px;
+  padding: 6px 14px;
+  border-radius: 90px;
+  border: 1px solid $color-border;
+  background-color: $color-light;
+  font-size: 1.3rem;
+  font-weight: 400;
+  &--selected {
+    background-color: $color-prime;
+    border-color: $color-prime;
+  }
+  &--colored {
+    background-color: $color-tag;
+  }
+}

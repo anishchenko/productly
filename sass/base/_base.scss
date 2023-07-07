@@ -1,0 +1,35 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  @extend %primary-font;
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+  color: $color-text;
+}
+
+h1 {
+  @extend %secondary-font;
+  @include font($size: 4.4rem, $height: 5.4rem);
+  margin: 0;
+}
+
+h2 {
+  @include font($size: 3.4rem, $height: 4.4rem);
+  margin: 0;
+}
+
+h3 {
+  @include font($size: 2.4rem, $height: 3.4rem);
+  margin: 0;
+}
+
+h4 {
+  @include font($size: 2.2rem, $height: 3.2rem, $weight: 600);
+  margin: 0;
+}
+
+h5 {
+  @include font($size: 1.6rem, $height: 2.6rem);
+  margin: 0;
+}

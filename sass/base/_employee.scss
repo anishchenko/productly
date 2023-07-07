@@ -1,0 +1,32 @@
+.employee {
+  
+  display: flex;
+  // max-width: 377px;
+  // flex-basis: calc(30% -15px);
+  position: relative;
+  // justify-content: space-between;
+  
+  &__content {
+    // padding: 35px 110px 35px 30px;
+    width: 320px;
+    padding: 35px 0 35px 35px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  }
+  &__work {
+    margin: 0;
+    @include font($size: 1.4rem, $weight: 400, $height: 2.6rem);
+  }
+  &__mail {
+    text-decoration: none;
+  }
+  &__photo {
+    position: absolute;
+    top: -20px;
+    right: -50px;
+    width: 98px;
+    height: 98px;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+  }
+}
